@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulir Pemesanan Barang</h1>
+        <p id="description">Harap isi formulir ini agar barang bisa sampai tujuan, dimohon untuk bersabar karena kami proses pesanan sesuai antrian yang ada</p>
+    </header>
+    <hr>
+    <body>
+        <form action="#" id="survey-form">
+          <div id="data-diri-section">
+            <fieldset >
+                <legend>Data Diri</legend>
+                    <label for="name" id="name-label">Nama Lengkap : </label>
+                    <input required type="text" name="name" id="name" placeholder="Masukkan nama lengkap">
+                    <label for="email" id="email-label">Email : </label>
+                    <input required type="email" name="email" id="email" placeholder="example@email.com">
+                    <label for="number" id="number-label">Umur(Opsional) : </label>
+                    <input type="number" name="age" id="number" min="1" max="99" placeholder="1 - 99">
+            </fieldset>
+          </div>
+
+          <div id="alamat-section">
+            <fieldset>
+                <legend>Jenis Pengiriman</legend>
+                    <select name="kota" id="dropdown">
+                        <option disabled selected >Pilih Kota Tujuan</option>
+                        <option value="Gresik">Gresik</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Sidoarjo">Sidoarjo</option>
+                        <option value="Mojokerto">Mojokerto</option>
+                        <option value="Lamongan">Lamongan</option>
+                    </select>
+                    <select name="pengiriman" id="dropdown">
+                        <option disabled selected >Pilih Jenis Pengiriman</option>
+                        <option value="Ekspress">Ekspress</option>
+                        <option value="Reguler">Reguler</option>
+                        <option value="Same Day">Same Day</option>
+                        <option value="Kilat">Kilat</option>
+                    </select>
+                    <p>Apakah ingin menggunakan Tambahan Packing Kayu</p>
+                    <input checked type="radio" name="packing" id="packing" value="Iya">
+                    <label for="packing" id="packing-label">Iya</label>
+                    <input type="radio" name="packing" id="packing" value="Tidak">
+                    <label for="packing" id="packing-label">Tidak</label>
+            </fieldset>
+          </div>
+
+          <div id="checkout-section">
+            <fieldset>
+                <legend>Checkout Barang</legend>
+                    <input checked type="checkbox" name="checkout" id="checkout" value="Baju">
+                    <label for="checkout" id="checkout-label">Baju</label> <br>
+                    <input type="checkbox" name="checkout" id="checkout" value="Celana">
+                    <label for="checkout" id="checkout-label">Celana</label> <br>
+                    <input type="checkbox" name="checkout" id="checkout" value="Topi">
+                    <label for="checkout" id="checkout-label">Topi</label> <br>
+                    <input type="checkbox" name="checkout" id="checkout" value="Kaos Oblong">
+                    <label for="checkout" id="checkout-label">Kaos Oblong</label> <br>
+                    <input type="checkbox" name="checkout" id="checkout" value="Jas">
+                    <label for="checkout" id="checkout-label">Jas</label> <br>
+                    <input type="checkbox" name="checkout" id="checkout" value="Jaket">
+                    <label for="checkout" id="checkout-label">Jaket</label> <br>
+            </fieldset>
+          </div>
+
+          <p>Tuliskan Keterangan Produk Yang Anda ingikan (Opsional) :</p>
+          <textarea name="keterangan" id="keterangan" rows="5" cols="180"></textarea>
+          <br><br>
+          <button type="submit" id="submit">Kirim</button>
+
+        </form>
+    </body>
+</body>
+</html>
